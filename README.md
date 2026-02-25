@@ -1,5 +1,9 @@
 # Quiz_crue
 
+## 📊 Análisis de Incidentes del CRUE
+
+Este proyecto examina datos diarios del Centro Regulador de Urgencias y Emergencias, registrando tendencias en incidentes de salud críticos durante 2022-2023.
+
 ## 📌 Descripción de los datos
 
 Este proyecto analiza registros diarios del Centro Regulador de Urgencias y Emergencias (CRUE).  
@@ -47,3 +51,11 @@ La entidad atiende miles de llamadas diarias y coordina ambulancias 24/7 a trav�
 ## 🔎 ¿Se puede predecir?
 
 Sí, es posible realizar predicciones debido a que los datos presentan patrones temporales claros, especialmente efectos estacionales por mes y por día de la semana. El aumento en fines de semana y en diciembre sugiere comportamiento sistemático. Modelos de series de tiempo como Holt-Winters o ARIMA podrían capturar tendencia y estacionalidad para generar pronósticos confiables.
+
+## 📊 Serie Temporal Diaria
+
+![Serie Temporal que muestra fluctuaciones diarias de incidentes del CRUE entre 935 y 3275 llamadas durante 2022-2023, con un pico notable el 25 de diciembre de 2022](serie_temporal.png)
+
+## 📆 Promedio Mensual de Incidentes
+
+![Gráfico de línea titulado Promedio mensual de incidentes mostrando el eje X con los 12 meses del 1 al 12 y eje Y con valores de 1460 a 1900 incidentes. La línea muestra baja actividad en enero con 1460 incidentes, ascenso gradual hasta mayo con pico de 1760 incidentes, descenso en junio a 1680, recuperación en septiembre con máximo de 1840 incidentes, ligera caída en octubre a 1760, y cierre en diciembre con 1895 incidentes. El patrón sugiere mayor actividad en fines de año](promedio_mensual.png)
