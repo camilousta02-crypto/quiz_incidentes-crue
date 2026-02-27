@@ -3,7 +3,7 @@ import numpy as np
 
 
 
-df = pd.read_csv("incidentes_crue_diarios.txt")
+df = pd.read_csv("incidentes_crue_diarios.txt", sep="\t")
 
 
 df['fecha'] = pd.to_datetime(df['fecha'])
@@ -12,9 +12,6 @@ incidentes = df['incidentes']
 
 print("\n========== ANÁLISIS DESCRIPTIVO ==========\n")
 
-# ==============================
-# MEDIDAS DE TENDENCIA CENTRAL
-# ==============================
 
 media = np.mean(incidentes)
 mediana = np.median(incidentes)
@@ -38,9 +35,6 @@ print("VARIANZA:", varianza)
 print("COEFICIENTE DE VARIACIÓN (%):", cv)
 print("RANGO:", rango)
 
-# ==============================
-# CUARTILES Y PERCENTILES
-# ==============================
 
 q1 = np.percentile(incidentes, 25)
 q2 = np.percentile(incidentes, 50)
@@ -54,9 +48,6 @@ print("Q3 (75%):", q3)
 print("RANGO INTERCUARTÍLICO (IQR):", iqr)
 print("PERCENTIL 95:", p95)
 
-# ==============================
-# VALORES EXTREMOS
-# ==============================
 
 max_dia = df.loc[incidentes.idxmax()]
 min_dia = df.loc[incidentes.idxmin()]
